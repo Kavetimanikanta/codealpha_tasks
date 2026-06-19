@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">MyPortfolio</a>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy fade-up">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Manikanta Kaveti</h1>
+          <p class="hero-text">I design and build modern web experiences with clean interfaces, responsive layouts, and thoughtful interactions.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+            <a href="Kaveti_Manikanta@Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-card fade-up delay-1">
+          <div class="profile-card">
+            <div class="profile-avatar"></div>
+            <h2>Full Stack Developer</h2>
+            <p>Crafting polished websites with HTML, CSS, JavaScript, React.js, Node.js, and Django.</p>
+            <ul class="stat-list">
+              <li><strong>6+</strong><span>Projects</span></li>
+              <li><strong>3</strong><span>Years Exp</span></li>
+              <li><strong>100%</strong><span>Responsive</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section block about-section">
+      <div class="container fade-up">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>Building thoughtful digital experiences</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>I’m a web developer focused on creating responsive, accessible, and user-friendly websites. I enjoy turning ideas into polished interfaces with subtle animations and intuitive design.</p>
+            <p>My workflow combines reliable structure, performance-first styling, and the right JavaScript enhancements to keep interactions smooth and fast.</p>
+          </div>
+          <div class="about-list">
+            <div><strong>Location:</strong> Remote / Anywhere</div>
+            <div><strong>Focus:</strong> Frontend Development</div>
+            <div><strong>Tools:</strong> VS Code, Figma, Git</div>
+            <div><strong>Contact:</strong> hello@myportfolio.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container fade-up">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Projects that showcase my strengths</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card hover-rise">
+            <span class="project-chip">UI Design</span>
+            <h3>Landing Page Refresh</h3>
+            <p>Redesigned a SaaS landing page with a modern visual system, improved readability, and better conversion flow.</p>
+            <a href="#contact">Request demo</a>
+          </article>
+          <article class="project-card hover-rise">
+            <span class="project-chip">Performance</span>
+            <h3>Speed-Optimized Blog</h3>
+            <p>Built a fast, accessible blog using clean HTML structure, CSS grid, and minimal JavaScript for seamless browsing.</p>
+            <a href="#contact">See case study</a>
+          </article>
+          <article class="project-card hover-rise">
+            <span class="project-chip">Interactive</span>
+            <h3>Portfolio Dashboard</h3>
+            <p>Implemented a responsive dashboard with interactive cards, animated stats, and mobile-friendly navigation.</p>
+            <a href="#contact">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section block">
+      <div class="container fade-up">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>What I work with</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card hover-rise skill-html"><strong>HTML</strong><span>Semantic markup</span></div>
+          <div class="skill-card hover-rise skill-css"><strong>CSS</strong><span>Responsive layouts</span></div>
+          <div class="skill-card hover-rise skill-js"><strong>JavaScript</strong><span>Interactive UI</span></div>
+          <div class="skill-card hover-rise skill-python"><strong>Python</strong><span>Backend automation</span></div>
+          <div class="skill-card hover-rise skill-react"><strong>React.js</strong><span>Component-driven UI</span></div>
+          <div class="skill-card hover-rise skill-node"><strong>Node.js</strong><span>Server-side apps</span></div>
+          <div class="skill-card hover-rise skill-django"><strong>Django</strong><span>Full stack web apps</span></div>
+          <div class="skill-card hover-rise skill-git"><strong>Git</strong><span>Version control workflow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container fade-up">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something great together</h2>
+            <p>Send a message to discuss projects, collaboration, or a new role.</p>
+            <a href="Kaveti_Manikanta@Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea rows="5" placeholder="Tell me about your project"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Alex Doe. Built with HTML, CSS, and JavaScript.</p>
+      <div class="footer-links">
+        <a href="#home">Top</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
