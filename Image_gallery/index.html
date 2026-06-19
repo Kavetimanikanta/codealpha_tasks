@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-title">My Gallery</h1>
+                <p class="subtitle">Explore and manage your image collection</p>
+            </div>
+            <a href="add-images.html" class="btn-add-page">
+                <span class="btn-icon">➕</span>
+                Add Images
+            </a>
+        </header>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="technology">Technology</button>
+            <div id="dynamicFilters"></div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery" id="gallery">
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="Full size image">
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
